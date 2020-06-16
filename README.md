@@ -33,7 +33,7 @@ belongs_to :user
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false,|
+|name|string|null: false,|
 
 ### Association
 has_many :groups_users
@@ -43,7 +43,7 @@ has_many :messages
 ## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: tcatrue|
 |group_id|integer|null: false, foreign_key: true|
 
 ### Association
